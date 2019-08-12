@@ -17,7 +17,7 @@
     "dist"
   ],
   "scripts": {
-    "prepublish": "yarn build",
+    "version": "yarn build",
     "build": "microbundle",
     "dev": "microbundle watch",
     "test": "ava"
@@ -33,5 +33,8 @@
     "require": [
       "esm"
     ]
+  },
+  "np": {
+    "contents": "dist"
   }
 }
