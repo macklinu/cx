@@ -17,6 +17,7 @@
     "dist"
   ],
   "scripts": {
+    "prepublish": "yarn build",
     "build": "microbundle",
     "dev": "microbundle watch",
     "test": "ava"
