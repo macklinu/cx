@@ -7,7 +7,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "source": "src/index.ts",
+  "source": "src/index.js",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "unpkg": "dist/index.umd.js",
