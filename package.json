@@ -1,0 +1,36 @@
+{
+  "name": "@macklinu/cx",
+  "version": "0.0.0",
+  "author": "Macklin Underdown <macklinu@gmail.com>",
+  "license": "MIT",
+  "repository": "macklinu/cx",
+  "publishConfig": {
+    "access": "public"
+  },
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "dist"
+  ],
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "ava"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^2.2.0",
+    "esm": "^3.2.25",
+    "microbundle": "^0.11.0",
+    "prettier": "^1.18.2"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  }
+}
