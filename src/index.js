@@ -1,4 +1,4 @@
-const cx = (...args) => {
+export default function cx(...args) {
   return args
     .reduce((arr, val) => {
       if (typeof val === 'string' && val) {
@@ -8,5 +8,3 @@ const cx = (...args) => {
     }, [])
     .join(' ')
 }
-
-export default cx

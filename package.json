@@ -9,7 +9,8 @@
   },
   "source": "src/index.js",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "exports": "./dist/index.modern.js",
+  "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
   "types": "index.d.ts",
   "files": [
@@ -24,10 +25,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "ava": "^2.3.0",
+    "ava": "^3.15.0",
     "esm": "^3.2.25",
-    "microbundle": "^0.11.0",
-    "prettier": "^1.18.2"
+    "microbundle": "^0.13.0",
+    "prettier": "^2.2.1"
   },
   "ava": {
     "require": [

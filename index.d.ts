@@ -1,2 +1,3 @@
-declare const cx: (...args: any[]) => string
+declare function cx(...args: any[]): any
+
 export default cx
