@@ -1,7 +1,7 @@
 {
   "name": "@macklinu/cx",
   "description": "A utility for creating className strings",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "author": "Macklin Underdown <macklinu@gmail.com>",
   "license": "MIT",
   "type": "module",
