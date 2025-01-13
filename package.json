@@ -1,41 +1,41 @@
 {
   "name": "@macklinu/cx",
+  "description": "A utility for creating className strings",
   "version": "1.0.4",
   "author": "Macklin Underdown <macklinu@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "repository": "macklinu/cx",
   "publishConfig": {
     "access": "public"
   },
-  "source": "src/index.js",
-  "main": "dist/index.js",
-  "exports": "./dist/index.modern.js",
-  "module": "dist/index.module.js",
-  "unpkg": "dist/index.umd.js",
-  "types": "index.d.ts",
+  "packageManager": "pnpm@9.15.3",
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
   "files": [
-    "index.d.ts",
     "dist"
   ],
+  "prettier": "@macklinu/prettier-config",
   "scripts": {
-    "version": "yarn build",
-    "build": "microbundle",
-    "dev": "microbundle watch",
-    "test": "ava"
+    "build": "tsup",
+    "release": "tsup",
+    "test": "vitest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0"
+  },
   "devDependencies": {
-    "ava": "^3.15.0",
-    "esm": "^3.2.25",
-    "microbundle": "^0.13.0",
-    "prettier": "^2.2.1"
-  },
-  "ava": {
-    "require": [
-      "esm"
-    ]
-  },
-  "np": {
-    "contents": "dist"
+    "@changesets/cli": "^2.27.11",
+    "@macklinu/prettier-config": "^0.0.0",
+    "prettier": "^3.4.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
   }
 }

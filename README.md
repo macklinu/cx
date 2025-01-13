@@ -5,15 +5,18 @@
 ## Installation
 
 ```sh
-yarn add @macklinu/cx
+pnpm add @macklinu/cx
 ```
 
 ## Usage
 
-This is a simplified version of [classnames](https://github.com/JedWatson/classnames), where any truthy string argument to the `cx()` function will be turned into a class string.
+This is a combination of two libraries that I always use with Tailwind:
 
-```js
-import cx from '@macklinu/cx'
+- [clsx](https://github.com/lukeed/clsx)
+- [tailwind-merge](https://github.com/dcastil/tailwind-merge)
+
+```ts
+import { cx } from '@macklinu/cx'
 
 cx('foo', 'bar') // 'foo bar'
 
