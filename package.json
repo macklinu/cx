@@ -23,7 +23,7 @@
   "prettier": "@macklinu/prettier-config",
   "scripts": {
     "build": "tsup",
-    "release": "tsup",
+    "release": "tsup && changeset publish",
     "test": "vitest"
   },
   "dependencies": {
