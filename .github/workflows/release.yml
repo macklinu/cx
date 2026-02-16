@@ -29,6 +29,7 @@ jobs:
         with:
           cache: pnpm
           node-version-file: ".nvmrc"
+          registry-url: "https://registry.npmjs.org"
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Create release PR or publish to npm
