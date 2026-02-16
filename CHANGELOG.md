@@ -1,5 +1,11 @@
 # @macklinu/cx
 
+## 3.0.0
+
+### Major Changes
+
+- 1b4668d: Upgrade tailwind-merge@^3 and Node 24
+
 ## 2.0.0
 
 ### Major Changes
@@ -7,6 +13,7 @@
 - 77d0ac5: Replace implementation with [clsx][] and [tailwind-merge][]
 
   Major changes:
+
   - Only support Node.js >=18
   - Replace default export with named export
 

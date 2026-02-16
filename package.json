@@ -1,6 +1,6 @@
 {
   "name": "@macklinu/cx",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A utility for creating className strings",
   "license": "MIT",
   "author": "Macklin Underdown <macklinu@gmail.com>",
