@@ -1,0 +1,7 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: lint
+      run: pnpm lint {staged_files}
+    - name: format
+      run: pnpm fmt --no-error-on-unmatched-pattern {staged_files}

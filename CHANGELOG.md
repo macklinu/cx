@@ -7,7 +7,6 @@
 - 77d0ac5: Replace implementation with [clsx][] and [tailwind-merge][]
 
   Major changes:
-
   - Only support Node.js >=18
   - Replace default export with named export
 
